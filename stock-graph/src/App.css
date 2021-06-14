@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+/* .test_parent {
+  color: #0f0;
+  .test_child {
+    color: #f00;
+  }
+} */

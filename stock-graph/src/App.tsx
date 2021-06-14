@@ -1,9 +1,15 @@
 import React from 'react';
 import './App.css';
+import StockInfoList from './component/organisms/StockInfoList'
+
 
 function App() {
   return (
-    <div className="App">Hello</div>
+    <div className="App">
+      <ul>
+        <StockInfoList />
+      </ul>
+    </div>
   );
 }
 
