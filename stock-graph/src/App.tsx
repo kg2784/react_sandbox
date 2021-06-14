@@ -1,9 +1,10 @@
-import React from 'react';
+import {VFC} from 'react';
+import Home from './components/pages/Home'
 import './App.css';
 
-function App() {
+const App: VFC = () => {
   return (
-    <div className="App">Hello</div>
+    <Home></Home>
   );
 }
 
