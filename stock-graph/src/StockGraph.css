@@ -1,0 +1,82 @@
+@import-normalize;
+
+.stock-graph-component {
+  /*position: absolute;*/
+  width: 400px;
+  height: 237px;
+  margin-left: 79px;
+  margin-top: 198px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 0px 24px rgba(128, 128, 128, 0.2);
+  border-radius: 20px;
+}
+
+.stock-logo {
+  /*position: absolute;*/
+  width: 40px;
+  height: 40px;
+  left: 99px;
+  top: 218px;
+
+  background: #C4C4C4;
+}
+
+.stock-name {
+  /*position: absolute;*/
+  width: 133px;
+  height: 21px;
+  left: 147px;
+  top: 228px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  /* identical to box height */
+
+
+  color: #222222;
+}
+
+.stock-price {
+  /*position: absolute;*/
+  width: 119px;
+  height: 33px;
+  left: 99px;
+  top: 382px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+.stock-price-diff {
+  /*position: absolute;*/
+  width: 75px;
+  height: 28px;
+  left: 384px;
+  top: 387px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.stock-graph {
+  /*position: absolute;*/
+  width: 360px;
+  height: 100px;
+  left: 99px;
+  top: 270px;
+}
+
