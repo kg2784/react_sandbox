@@ -28,21 +28,20 @@ module.exports = {
     '@typescript-eslint',
     'import',
     'jsx-a11y',
+    'prefer-arrow',
     'react',
-    'react-hooks'
+    'react-hooks',
   ],
   root: true,
   rules: {
     'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': [
-      'error',
-    ],
+    '@typescript-eslint/no-use-before-define': ['error'],
     'lines-between-class-members': [
-    'error',
-    'always',
-    {
-      exceptAfterSingleLine: true
-    }
+      'error',
+      'always',
+      {
+        exceptAfterSingleLine: true,
+      },
     ],
     'no-void': [
       'error',
@@ -61,11 +60,11 @@ module.exports = {
     '@typescript-eslint/no-unused-vars': [
       'error',
       {
-        'vars': 'all',
-        'args': 'after-used',
-        'argsIgnorePattern': '_',
-        'ignoreRestSiblings': false,
-        'varsIgnorePattern': '_',
+        vars: 'all',
+        args: 'after-used',
+        argsIgnorePattern: '_',
+        ignoreRestSiblings: false,
+        varsIgnorePattern: '_',
       },
     ],
     'import/extensions': [
@@ -76,13 +75,13 @@ module.exports = {
         jsx: 'never',
         ts: 'never',
         tsx: 'never',
-      }
+      },
     ],
     'react/jsx-filename-extension': [
       'error',
       {
-        extensions: ['.jsx', '.tsx']
-      }
+        extensions: ['.jsx', '.tsx'],
+      },
     ],
     'react/jsx-props-no-spreading': [
       'error',
@@ -93,13 +92,21 @@ module.exports = {
       },
     ],
     'react/react-in-jsx-scope': 'off',
+    'prefer-arrow/prefer-arrow-functions': [
+      'error',
+      {
+        disallowPrototype: true,
+        singleReturnOnly: false,
+        classPropertiesAllowed: false,
+      },
+    ],
   },
   overrides: [
     {
-    'files': ['*.tsx'],
-    'rules': {
-      'react/prop-types': 'off',
-    },
+      files: ['*.tsx'],
+      rules: {
+        'react/prop-types': 'off',
+      },
     },
   ],
   settings: {
